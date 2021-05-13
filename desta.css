@@ -1,0 +1,44 @@
+
+.nav-link{font-family: 'Dela Gothic One', cursive;}
+
+
+.header{
+    background-image: linear-gradient( to bottom right,#009eef,#fff200);
+  
+}
+
+.story{
+    background-image: linear-gradient( to bottom right,#084ca1,#1ed8ef);
+  
+}
+
+.welcome{margin-top:25px}
+
+@media (min-width: 992px) { .jumbotron{margin-top: -75px;text-align: left;} 
+
+.stud{margin-left: 22%;
+    font-size: 2vw;
+    margin-top: -7.5%;}
+ 
+ }
+ @media (max-width: 900px) {.header{text-align:center;} img.rounded-circle{margin-left: 25%;} its{background-color:#1866fe ;} }
+ 
+ h5{margin-left: 20%;}
+
+ .s-article{text-align: center;}
+
+ 
+     
+ 
+  h2{font-family: helvetica;}
+  #par{font-size: 2.5vh;text-align:justify;}
+ 
+  .milky{
+  
+  }
+  .mini{
+   
+  }
+  .content{color: black;}
+
+footer{background-color: #d4dee0;}
