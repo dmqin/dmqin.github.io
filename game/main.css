@@ -68,6 +68,8 @@ h3 {
     color: #333;
 }
 
-.gameover {color: red;}
+#gameOver {color: red;}
 
-.refresh { font-size: 15px ;}
+#refresh { font-size: 15px ;}
+
+#refBut{ cursor: pointer;}

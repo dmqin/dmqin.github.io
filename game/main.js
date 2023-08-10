@@ -101,12 +101,18 @@ function addScore(){
 
 
 
+
 function gameOver() {
   let gameOvermsg = document.getElementById("gameOver");
   gameOvermsg.innerHTML="GAME OVER";
 
   let refreshMsg = document.getElementById("refresh");
   refreshMsg.innerHTML="Please resfresh to start a new game.";
+
+  let refresh =  '<img src="../img/refresh.png"  width="50" height="50" /> ';
+  let displayRef = document.getElementById("refBut");
+ 
+  displayRef.innerHTML=refresh;
 
   document.querySelectorAll('.choice').forEach(button => {
     button.disabled = true;
