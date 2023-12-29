@@ -1,0 +1,23 @@
+#propic {
+    opacity: 0;
+}
+
+#profileParagraph{
+    opacity: 0;
+}
+
+#interestText{
+    opacity: 0;
+}
+
+#interestPicture{
+    opacity: 0;
+}
+
+#interestText.animate__animated{
+    opacity: 1;
+}
+
+#interestPicture.animate__animated{
+    opacity: 1;
+}

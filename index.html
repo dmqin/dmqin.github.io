@@ -6,12 +6,24 @@
     <meta class="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/style.css"/>
+  
 
     <!-- Link for footer icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
     <title> Desta Imam Muttaqin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+     <!-- Jquery link -->
+     <script
+     src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+     <script src="script.js"></script>
+
+     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
  </head>
   <body>
 
@@ -59,10 +71,10 @@
       <main class="mt-6" >
            
             <h1 class="font-sans font-bold text-7xl text-white mb-10"> WELCOME TO DMQIN </h1> 
-                            <p class="font-mono text-center text-white mb-3">Portofolio website using html and tailwind css by Desta Imam Muttaqin.</p>
+                            <span class="font-mono text-center text-white mb-5" id="headerP"></span>
           
           
-       <div class="text-center ">
+       <div class="text-center mt-2">
          
          
                     <a href="">  <button  class="mt-8 border-solid border-2 border-yellow-400 text-yellow-400 font-bold 
@@ -77,17 +89,17 @@
  
   <!-- Jumbotron profile sectin -->
   <section class="py-28" id="profile">
-    <div class="container mx-auto px-10 2xl:px-0">
+    <div class="container mx-auto px-10 2xl:px-0" >
        <h1 class="text-center text-4xl font-semibold font-mono"> OWNER </h1>
            <h1 class="text-center text-4xl font-semibold font-mono" > PROFILE </h1>
        
-        <div class="flex lg:items-center md:items-start flex-wrap xl:w-9/12 mx-auto mt-10">
-            <div class="md:w-5/12 w-full px-10 mb-10 md:mb-0">
+        <div class="flex lg:items-center md:items-start flex-wrap xl:w-9/12 mx-auto mt-10" >
+            <div class="md:w-5/12 w-full px-10 mb-10 md:mb-0" id="propic">
                 <img src="img/profile.png" class="w-50" />
                 <h5 class="font-bold text-center">- DESTA MUTTAQIN -</h5>
                 <h6 class="italic text-center mr-1"> Student </h6>
             </div>
-            <div class="md:w-7/12 w-full px-10">
+            <div class="md:w-7/12 w-full px-10" id="profileParagraph">
                 <p class="text-lg leading-relaxed text-justify "> 
                   Hii folks!!! Dimqin's here. My name is Desta, but "Dimqin" is my online nickname 
                   on most of my social media platforms. I'm a college student and currently studying in information systems major .
@@ -108,11 +120,11 @@
       <div class="container mx-auto px-10 2xl:px-0 ">
         
           <div class="flex lg:items-center md:items-start flex-wrap xl:w-9/12 mx-auto mt-10">
-              <div class="md:w-5/12 w-full px-10 mb-10 md:mb-0">
+              <div class="md:w-5/12 w-full px-10 mb-10 md:mb-0" id="interestText">
                  <h2 class="text-6xl "> MY</h2>
                  <h3 class="text-6xl text-pink-50">INTEREST</h3>
               </div>
-                 <div class="md:w-7/12 w-full px-10 grid grid-cols-2 gap-4 text-pink-50 font-mono ">
+                 <div class="md:w-7/12 w-full px-10 grid grid-cols-2 gap-4 text-pink-50 font-mono " id="interestPicture">
                            <a class="rounded transform transition duration-500 hover:scale-110" href="https://www.shutterstock.com/g/Dmqin">                        Photograph      <img src="img/camera.jpg"  />  </a> 
                            <a class="rounded transform transition duration-500 hover:scale-110"  href="game/index.html">                                                  Mini-games      <img src="img/games.jpg" />  </a>
                            <a class="rounded transform transition duration-500 hover:scale-110"    href=" https://medium.com/@dimqin2004">                               Articles        <img src="img/news.jpg" />  </a>  
@@ -189,6 +201,11 @@
     </div>
 </main>
 
+  <!-- Element to contain animated typing -->
+  <span id="element"></span>
+
+
+
 </footer>
 
 
@@ -197,6 +214,12 @@
              <p class="text-center" >© 2023 | Created By Dmqin</p>
       </div>
 
+      <script>
+        var typed = new Typed('#headerP', {
+          strings: ['Portofolio website using html and tailwind css by Desta Imam Muttaqin.'],
+          typeSpeed: 50,
+        });
+      </script>
   </body>
 
   
